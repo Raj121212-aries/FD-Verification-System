@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Smart Shopping - Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="background-blob blob-1"></div>
+    <div class="background-blob blob-2"></div>
+
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-robot"></i> SmartShop AI
+        </div>
+        <div class="nav-links">
+            <a href="/">Predictor</a>
+            <a href="/dashboard" class="active">Analytics</a>
+        </div>
+    </nav>
+
+    <main class="container dashboard-container">
+        <div class="dashboard-header">
+            <h2>Real-Time <span class="gradient-text">Analytics</span> Dashboard</h2>
+            <div class="live-indicator">
+                <span class="dot"></span> Live Data (<span id="total-items">0</span> items)
+            </div>
+        </div>
+
+        <div class="charts-grid">
+            <div class="glass-card chart-card">
+                <h3>Buy vs Not Buy</h3>
+                <canvas id="pieChart"></canvas>
+            </div>
+            
+            <div class="glass-card chart-card">
+                <h3>Rating Distribution</h3>
+                <canvas id="histogramChart"></canvas>
+            </div>
+            
+            <div class="glass-card chart-card full-width">
+                <h3>Scanning Trend Over Time</h3>
+                <canvas id="lineChart"></canvas>
+            </div>
+
+            <div class="glass-card chart-card full-width">
+                <h3>Discount Distribution (Fake vs Genuine)</h3>
+                <canvas id="scatterChart"></canvas>
+            </div>
+        </div>
+    </main>
+
+    <script src="/static/js/dashboard.js"></script>
+</body>
+</html>
