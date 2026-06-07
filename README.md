@@ -33,6 +33,25 @@ To develop an intelligent system that verifies the authenticity of online discou
 
 # Future Scope
 Integration with multiple e-commerce platforms
+
+
+# FD-Verification-System/
+│
+├── app.py
+├── scraper.py
+├── ml_model.py
+├── requirements.txt
+├── README.md
+│
+├── templates/
+├── static/
+├── data/
+│
+├── screenshots/
+│
+└── docs/
+    ├── Final_Report.pdf
+    └── Project_PO_Mapping.docx
 Historical price tracking
 Browser extension support
 Mobile application development
